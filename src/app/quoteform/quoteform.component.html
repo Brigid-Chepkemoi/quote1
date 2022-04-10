@@ -1,0 +1,18 @@
+
+<section class="new-quote-container">
+    <h2 id="new-quote">New Quote</h2>
+    <article class="new-quote">
+        <form class="new-quote-form" (submit)="addUser($event, inputName.value, inputAuthor.value,inputTextarea.value)">
+            <h4>Name</h4>
+            <input type="text" name="name" id="name" #inputName required minLength="2">
+            <h4>Author</h4>
+            <input type="text" name="author" id="author" #inputAuthor required minLength="2">
+            <h4>Quote</h4>
+            <textarea name="quote" id="quote" cols="30" rows="10" #inputTextarea required minLength="5"></textarea>
+            <div>
+                <button class="btn" type="submit">Publish</button>
+            </div>
+        </form>
+
+    </article>
+</section>
